@@ -24,4 +24,4 @@ This an Arduino sketch for the wind sensor that sends the data to the ROS serial
 * Check that the data is being received correctly
 
 ## Topics List
-* /lss/gc/wind_sensor (std_msgs/String) -> Dictionary with the wind sensor data
+* /lss/gcs/wind_sensor (std_msgs/String) -> Dictionary with the wind sensor data
