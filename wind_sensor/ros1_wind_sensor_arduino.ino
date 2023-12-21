@@ -18,7 +18,7 @@ void loop(){
   struct wind wind_data;
   get_wind_data(&wind_data);
   char buff[40];
-  sprintf(buff,"{'dire': %d, 'vel' : %d}",wind_data.direction, wind_data.velocity);
+  sprintf(buff,"{'wind_speed': %d, 'wind_direction' : %d}", wind_data.velocity,wind_data.direction);
   str_msg.data = buff;
   chatter.publish( &str_msg );
   nh.spinOnce();

@@ -21,7 +21,16 @@ This an Arduino sketch for the wind sensor that sends the data to the ROS serial
 * Check that the data is being sent correctly
 * Connect the Arduino to the computer
 * Run the ROS serial node
-* Check that the data is being received correctly
+* Check that the data is being received correctly in RQT_GUI Topics Monitor
 
 ## Topics List
 * /lss/gcs/wind_sensor (std_msgs/String) -> Dictionary with the wind sensor data
+
+
+## Topic Example
+```
+{
+  "wind_speed": 0.0,
+  "wind_direction": 0.0
+}
+```
